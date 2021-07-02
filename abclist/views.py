@@ -29,8 +29,8 @@ class ABCListViewSet(viewsets.ModelViewSet):
     serializer_class = ABCListSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+    # def perform_create(self, serializer):
+    #     serializer.save(owner=self.request.user)
 
 
 class UserViewSet(viewsets.ModelViewSet):
