@@ -3,6 +3,7 @@ from json import JSONEncoder, JSONDecoder
 
 class ABCList(models.Model):
     user = models.CharField(max_length=255)
+    topic = models.CharField(max_length=255, default="")
     abclist = models.JSONField(encoder=JSONEncoder, decoder=JSONDecoder)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

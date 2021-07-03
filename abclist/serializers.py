@@ -6,7 +6,7 @@ from .models import ABCList
 class ABCListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = ABCList
-        fields = ['id', 'user', 'abclist', 'created_at', 'updated_at']
+        fields = ['id', 'user', 'topic', 'abclist', 'created_at', 'updated_at']
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
