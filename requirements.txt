@@ -4,6 +4,7 @@ django-heroku
 requests
 djangorestframework
 django-cors-headers
+djangorestframework-simplejwt
 django-filter
 Markdown
 whitenoise
